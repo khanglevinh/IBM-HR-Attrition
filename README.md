@@ -11,7 +11,8 @@ In this project, I perform a quick analysis of the IBM HR attrition data to expl
 - Attrition is highest for both men and women from 18 to 35 years of age, then gradually decreases.  
 - Attrition is higher for employees who usually travel than others, and this rate is higher for women than for men.
 
-**Machine Learning model**
+**Machine Learning model**  
+  
 *Problem:* Our data faces an imbalance problem, as the number of employees with attrition is much smaller than those without. In standard machine learning algorithms like Decision Trees and Logistic Regression, this imbalance can lead to a bias toward the majority class, causing the minority class to be overlooked. As a result, these models often predict only the majority class, leading to a significant misclassification of the minority class compared to the majority class.  
   
 *SMOTE:* To address this imbalance, we will use the SMOTE method, one of the most widely used oversampling techniques. SMOTE balances class distribution by generating new instances of the minority class through interpolation rather than simple replication. After oversampling, the data is restructured, allowing for the application of various classification models on the balanced dataset.  
